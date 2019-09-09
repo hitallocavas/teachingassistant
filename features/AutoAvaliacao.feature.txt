@@ -21,3 +21,24 @@ THEN
 Tela de visualização aparece com os dados em 0% na porcentagem AND  0 na quantidade AND  uma mensagem aparece dizendo que lista está vazia pois não há alunos com auto-avaliações discrepantes
 And envio de e-mail para alunos afirmando não haver discrepância em suas avaliações.
 
+Scenario: Given o professor Paulo está na página de “Alunos” 
+AND o Aluno Carlos foi avaliado por Paulo com “MPA” para  “Meta 1”, “Meta 2”, “Meta 3”, “Meta 4” e “Meta 5”
+AND
+O Aluno Carlos auto avaliou
+“MA” para a “Meta 1”, “Meta 2”, “Meta 3”, “Meta 4” e “Meta 5”
+AND
+O Aluno Junior foi avaliado por Paulo com “MA” para “Meta 1”, “Meta 2”, “Meta 3”, “Meta 4” e “Meta 5”
+AND 
+O aluno Junior auto avaliou com “MPA” para “Meta 1”, “Meta 2”, “Meta 3”, “Meta 4” e “Meta 5”  
+AND
+O Aluno Cristian foi avaliado por Paulo com “MPA” para “Meta 1”, “Meta 2”, “Meta 3”, “Meta 4” e “Meta 5”
+AND 
+O aluno Cristian auto avaliou com “MPA” para “Meta 1”, “Meta 2”, “Meta 3”, “Meta 4” e “Meta 5”  
+WHEN Paulo seleciona “Visualizar Discrepâncias”
+THEN
+Tela de visualização aparece com os dados em 33.3% na porcentagem
+AND 
+1 na quantidade de alunos com avaliações discrepantes
+AND 
+Na lista aparece o nome do aluno Carlos
+
