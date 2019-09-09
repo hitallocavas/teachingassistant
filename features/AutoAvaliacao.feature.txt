@@ -1,0 +1,4 @@
+Feature: Auto avaliação de metas de disciplina
+As a aluno matriculado na disciplina ministrada pelo professor "Paulo" 
+I want to fazer auto avaliação das metas cadastradas pelo professor
+So eu posso registrar as avaliações que fiz para análise do professor.
